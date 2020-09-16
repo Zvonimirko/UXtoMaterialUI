@@ -7,11 +7,15 @@ const useStyles = makeStyles(() => ({
   typographyStyles: {
     flex: 1,
   },
+  appBarStyles: {
+    backgroundColor: "#444",
+    marginBottom: "20px",
+  },
 }));
 function Header() {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar className={classes.appBarStyles} position="static">
       <Toolbar>
         <Typography className={classes.typographyStyles}>
           Zvonimir Horvat
